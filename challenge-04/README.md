@@ -7,15 +7,15 @@ um único parâmetro como argumento. Essa função deve retornar `true` se o
 equivalente booleano para o valor passado no argumento for `true`, ou `false`
 para o contrário.
 */
-var isTruthy = function(a){
-    return !!a; 
+var isTruthy = function (a) {
+  return !!a;
 };
 
 // Invoque a função criada acima, passando todos os tipos de valores `falsy`.
 isTruthy(false);
 isTruthy(null);
 isTruthy(undefined);
-isTruthy('');
+isTruthy("");
 isTruthy(0);
 isTruthy(-0);
 isTruthy(NaN);
@@ -23,10 +23,10 @@ isTruthy(NaN);
 /*
 Invoque a função criada acima passando como parâmetro 10 valores `truthy`.
 */
-isTruthy(1,2,3);
-isTruthy('Cadu');
+isTruthy(1, 2, 3);
+isTruthy("Cadu");
 isTruthy({});
-isTruthy({nome:"Carlos", sobreNome:"Oliveira"})
+isTruthy({ nome: "Carlos", sobreNome: "Oliveira" });
 isTruthy(function () {});
 
 /*
@@ -104,15 +104,16 @@ citado acima, no lugar de "pessoas".
 */
 carro.adicionarPessoas = function (numeroPessoas) {
   var pessoas = carro.quantidadePessoas + numeroPessoas;
+  var quantasPessoasCabem = carro.assentos - carro.quantidadePessoas;
+  var pluralPessoa = carro.quantidadePessoas === 1 ? "pessoa" : "pessoas";
+  
   if (carro.quantidadePessoas === carro.assentos && pessoas >= carro.assentos) {
     return "O carro já está lotado!";
   }
 
   if (pessoas > carro.assentos) {
-    var quantasPessoasCabem = carro.assentos - carro.quantidadePessoas;
-    var pluralPessoa = carro.quantidadePessoas === 1 ? "pessoa" : "pessoas";
     return "Só cabem mais " + quantasPessoasCabem + " " + pluralPessoa + "!";
-  }
+  } 
 
   carro.quantidadePessoas += numeroPessoas;
   return "Já temos " + carro.quantidadePessoas + " " + "pessoas no carro!";
@@ -133,15 +134,15 @@ carro.mudarCor("Azul");
 // E agora, qual a cor do carro?
 carro.obterCor();
 // Mude a cor do carro para verde musgo.
-carro.mudarCor("Verde Musgo")
+carro.mudarCor("Verde Musgo");
 // E agora, qual a cor do carro?
-carro.obterCor()
+carro.obterCor();
 // Qual a marca e modelo do carro?
-carro.obterMarcaModelo()
+carro.obterMarcaModelo();
 // Adicione 2 pessoas no carro.
-carro.adicionarPessoas(2)
+carro.adicionarPessoas(2);
 // Adicione mais 4 pessoas no carro.
-carro.adicionarPessoas(4)
+carro.adicionarPessoas(4);
 // Faça o carro encher.
 
 // Tire 4 pessoas do carro.
@@ -149,3 +150,4 @@ carro.adicionarPessoas(4)
 // Adicione 10 pessoas no carro.
 
 // Quantas pessoas temos no carro?
+```
