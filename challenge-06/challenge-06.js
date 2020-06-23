@@ -14,7 +14,6 @@ estar na ordem em que eles aparecem na tabela no momento da solução desse
 desafio.
 */
 var teams = [
-  null,
   "Palmeiras",
   "Ponte Preta",
   "Santos",
@@ -40,9 +39,7 @@ Crie uma função chamada `showTeamPosition` com as seguintes características:
 */
 function showTeamPosition(number) {
   if (number <= 5) {
-    return (
-      "O time que está em " + number + "º lugar é o " + teams[number] + "."
-    );
+    return "O time que está em " + number + "º lugar é o " + teams[number - 1] + ".";
   } else {
     return "Não temos a informação do time que está nessa posição.";
   }
