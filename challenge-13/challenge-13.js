@@ -172,7 +172,7 @@ Atribua o novo array a uma variável chamada `map`.
 */
   var map = newBrasil.map((item, index) => {
     return {
-      id: item.id + 1,
+      id:item.id + 1,
       estado: `${item.estado} pertence ao Brasil `,
     };
   });
