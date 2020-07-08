@@ -109,7 +109,7 @@ Consegue prever o resultado? Deixe uma mensagem no console tentando explicar
 o que acontece ;)
 */
   console.log("\nExiste um { number: 2 } em numberObjects?");
-  var number2Exist = numberObjects.indexOf({ number: 2 })
+  const number2Exist = numberObjects.indexOf({ number: 2 })
     ? "Existe um objeto { number: 2 } em numberObjects!"
     : "Não existe um objeto { number: 2 } em numberObjects!";
   console.log(number2Exist);
