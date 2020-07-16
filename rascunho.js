@@ -103,22 +103,27 @@ var obj = { name: "Carlos", lastName: "Oliveira" };
 // console.log(reduce);
 // python -m SimpleHTTPServer 9001
 
-var texto = `O Corvo é um poema narrativo do escritor norte-americano Edgar Allan Poe. Publicado pela primeira vez em janeiro de 1845, é conhecido 
-principalmente por sua musicalidade, linguagem estilizada e atmosfera sobrenatural. O poema trata da visita misteriosa de um corvo falante a um homem, 
-frequentemente identificado como estudante, que lamenta a perda de sua amada, Lenore, e progressivamente enlouquece. Sentado em um busto da Palas Atena, 
-o corvo parece perturbar ainda mais o protagonista com sua constante repetição da expressão "nunca mais". O poema faz referência a elementos folclóricos, 
-mitológicos, religiosos e clássicos.
-Poe afirmou, em seu ensaio A Filosofia da Composição, de 1846, ter escrito o poema de maneira lógica e metódica, com a intenção de criar uma obra que 
-agradaria tanto à crítica quanto ao gosto popular. O autor se inspirou, em parte, em um corvo falante do romance Barnaby Rudge: A Tale of the Riots of Eighty, 
-de Charles Dickens. De maneira semelhante, Poe baseou-se no ritmo complexo e métrica do poema Lady Geraldine's Courtship, de Elizabeth Barrett, além de fazer 
-uso da rima interna e da aliteração.`;
-var teste = texto.match(/a/g);
+// var texto = `O Corvo é um poema narrativo do escritor norte-americano Edgar Allan Poe. Publicado pela primeira vez em janeiro de 1845, é conhecido
+// principalmente por sua musicalidade, linguagem estilizada e atmosfera sobrenatural. O poema trata da visita misteriosa de um corvo falante a um homem,
+// frequentemente identificado como estudante, que lamenta a perda de sua amada, Lenore, e progressivamente enlouquece. Sentado em um busto da Palas Atena,
+// o corvo parece perturbar ainda mais o protagonista com sua constante repetição da expressão "nunca mais". O poema faz referência a elementos folclóricos,
+// mitológicos, religiosos e clássicos.
+// Poe afirmou, em seu ensaio A Filosofia da Composição, de 1846, ter escrito o poema de maneira lógica e metódica, com a intenção de criar uma obra que
+// agradaria tanto à crítica quanto ao gosto popular. O autor se inspirou, em parte, em um corvo falante do romance Barnaby Rudge: A Tale of the Riots of Eighty,
+// de Charles Dickens. De maneira semelhante, Poe baseou-se no ritmo complexo e métrica do poema Lady Geraldine's Courtship, de Elizabeth Barrett, além de fazer
+// uso da rima interna e da aliteração.`;
+// var teste = texto.match(/a/g);
 
+// const itemReplacer = (array, oldItem, newItem) =>
+//   array.map(item => item === oldItem ? newItem : item);
+// console.log(itemReplacer(teste,"a","e"));
 
-const itemReplacer = (array, oldItem, newItem) =>
-  array.map(item => item === oldItem ? newItem : item);
-console.log(itemReplacer(teste,"a","e"));
-
-  
 // REGEX \w pega texto
 // REGEX \d pega numero
+
+var regex = /\d/g;
+var name = "Ca123du";
+var result;
+while(result = regex.exec(name) !== null){
+  console.log(result);
+}
