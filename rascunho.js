@@ -124,6 +124,10 @@ var obj = { name: "Carlos", lastName: "Oliveira" };
 var regex = /\d/g;
 var name = "Ca123du";
 var result;
-while(result = regex.exec(name) !== null){
+while ((result = regex.exec(name) !== null)) {
   console.log(result);
 }
+var teste = document.querySelector();
+var testeDois = document.addEventListener("click", function name(event) { //subimit
+  event.preventDefault()
+},false);
