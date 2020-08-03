@@ -15,7 +15,7 @@
    nome, `username` deve receber "Desconhecido".
    Com a resposta, mostre um alert com a mensagem "Bem vindo [USERNAME]!"
    */
-  var userName = prompt(`Qual é o seu nome?`);//poderia colocar ou || 'Desconhecido' 
+  var userName = prompt(`Qual é o seu nome?`); //poderia colocar ou || 'Desconhecido'
   userName ? alert(`Bem vindo ${userName}`) : alert(`Desconhecido`);
 
   /*

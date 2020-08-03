@@ -128,6 +128,18 @@ while ((result = regex.exec(name) !== null)) {
   console.log(result);
 }
 var teste = document.querySelector();
-var testeDois = document.addEventListener("click", function name(event) { //subimit
-  event.preventDefault()
-},false);
+var testeDois = document.addEventListener(
+  "click",
+  function name(event) {
+    //subimit
+    event.preventDefault();
+  },
+  false
+);
+var counter = 0;
+function timer() {
+  console.log(`Timer`, counter++);
+  setTimeout(timer, 1000);
+}
+
+
