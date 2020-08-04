@@ -6,7 +6,7 @@
     3. Passe por parâmetro para a IIFE os objetos window e document.
     4. Dessa vez não é necessário criar um HTML. Ele já existe, e vamos utilizar
     a marcação criada nele para fazer nosso desafio ;)
-    
+
     O HTML NÃO PODE ser alterado!
     */
   /*
@@ -67,7 +67,7 @@ Adicione um listener de evento de click ao botão que faça o seguinte:
 2. Para verificar se o e-mail é válido use a função `isValidEmail`, passando
 o e-mail que foi entrado no campo de "Email" por parâmetro. (A função
     `isValidEmail` será criada logo abaixo).
-    
+
     3. Se tudo estiver OK, pergunte ao usuário:
     - "Tem certeza que deseja enviar o formulário?"
     Se for confirmado, mostre um alerta com a mensagem:
@@ -112,13 +112,13 @@ o e-mail que foi entrado no campo de "Email" por parâmetro. (A função
    2 caracteres alfanuméricos;
    - O final do domínio é opcional, mas se existir, deve começar com um
    ponto, seguido de no máximo 2 caracteres alfanuméricos.
-   
+
    Alguns e-mails válidos que podem ser usados para testar:
    - "meu.email+categoria@gmail.com"
    - "juca_malandro@bol.com.br"
    - "pedrobala@hotmail.uy"
    - "sandro@culinaria.dahora"
-   
+
    Alguns e-mails inválidos:
    - "walter-da-silva@maraca.br"
    - "rita-marica@titica.a.b"

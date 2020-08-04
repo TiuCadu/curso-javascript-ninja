@@ -35,5 +35,4 @@
     $timer.value = 0;
     stopTimer();
   }
-
 })(window, document);

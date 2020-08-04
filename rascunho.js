@@ -141,5 +141,3 @@ function timer() {
   console.log(`Timer`, counter++);
   setTimeout(timer, 1000);
 }
-
-
