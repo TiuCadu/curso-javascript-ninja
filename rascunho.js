@@ -55,8 +55,8 @@
 // do {
 //   console.log(counter++);
 // } while (counter < 10);
-var teams = ["Palmeiras", "Ponte Preta", "Santos", "Guarani", "São Paulo"];
-var obj = { name: "Carlos", lastName: "Oliveira" };
+// var teams = ["Palmeiras", "Ponte Preta", "Santos", "Guarani", "São Paulo"];
+// var obj = { name: "Carlos", lastName: "Oliveira" };
 // for (var prop in teams) {
 //   console.log(teams[prop]);
 // }
@@ -121,23 +121,23 @@ var obj = { name: "Carlos", lastName: "Oliveira" };
 // REGEX \w pega texto
 // REGEX \d pega numero
 
-var regex = /\d/g;
-var name = "Ca123du";
-var result;
-while ((result = regex.exec(name) !== null)) {
-  console.log(result);
-}
-var teste = document.querySelector();
-var testeDois = document.addEventListener(
-  "click",
-  function name(event) {
-    //subimit
-    event.preventDefault();
-  },
-  false
-);
-var counter = 0;
-function timer() {
-  console.log(`Timer`, counter++);
-  setTimeout(timer, 1000);
-}
+// var regex = /\d/g;
+// var name = "Ca123du";
+// var result;
+// while ((result = regex.exec(name) !== null)) {
+//   console.log(result);
+// }
+// var teste = document.querySelector();
+// var testeDois = document.addEventListener(
+//   "click",
+//   function name(event) {
+//     //subimit
+//     event.preventDefault();
+//   },
+//   false
+// );
+// var counter = 0;
+// function timer() {
+//   console.log(`Timer`, counter++);
+//   setTimeout(timer, 1000);
+// }
